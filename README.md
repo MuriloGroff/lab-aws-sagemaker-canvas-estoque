@@ -24,17 +24,23 @@ Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda p
 -   Escolha o dataset que você usará para treinar seu modelo de previsão de estoque.
 -   Faça o upload do dataset no SageMaker Canvas.
 
+-   Eu selecionei o dataset dataset-1000-com-preco-variavel-e-renovacao-estoque
+
 ### 2. Construir/Treinar
 
 -   No SageMaker Canvas, importe o dataset que você selecionou.
 -   Configure as variáveis de entrada e saída de acordo com os dados.
 -   Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
 
+-   Utilizei a coluna quantidade de estoque para fazer minha previsão, usei a coluna ID_PRODUTO para identificar os ítens e a coluna preço para agrupar os valores.
+
 ### 3. Analisar
 
 -   Após o treinamento, examine as métricas de performance do modelo.
 -   Verifique as principais características que influenciam as previsões.
 -   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
+
+-   Confesso que fiquei um pouco frustrado com free tear da AWS, pois apenas participando das aulas, já excedi o limite de requisições da instância, então acabei não tendo previsões para me basear. Porém, analisando alguns produtos individuais, notamos que o preço influencia na quantidade de estoque, principalmente quando o preço está maior, a quantidade de estoque também. 
 
 ### 4. Prever
 
